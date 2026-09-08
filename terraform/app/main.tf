@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
     # app/battlesnake-lambda-dev/terraform.tfstate key
-    region         = "us-east-1"
-    encrypt        = true # Garante que o estado seja criptografado no S3
+    region  = "us-east-1"
+    encrypt = true # Garante que o estado seja criptografado no S3
   }
 
   required_providers {
